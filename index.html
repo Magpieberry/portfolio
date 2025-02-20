@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-	<link href="styles.css" rel="stylesheet" type="text/css">  
-	<!-- Load CSS -->
-<script src="script.js" defer></script>   <!-- Load JS -->
-	
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,19 +43,7 @@
         <a href="#work" class="nav-button">Work</a>
         <a href="#resume" class="nav-button">Resume</a>
     </nav>
-    
-    <script>
-        document.addEventListener("scroll", function() {
-            const scrollIndicator = document.querySelector(".scroll-indicator");
-            const scrollLine = document.querySelector(".scroll-line");
-            
-            const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-            const scrollFraction = window.scrollY / maxScroll;
-            const lineHeight = scrollLine.offsetHeight;
-            
-            const newTop = scrollFraction * lineHeight;
-            scrollIndicator.style.top = `${newTop}px`;
-        });
-    </script>
+
+    <script src="script.js"></script>
 </body>
 </html>
