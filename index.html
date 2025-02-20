@@ -1,58 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+	<link href="styles.css" rel="stylesheet" type="text/css">  
+	<!-- Load CSS -->
+<script src="script.js" defer></script>   <!-- Load JS -->
+	
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Darya's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>test test</h1>
-        <p>Showcasing Innovation in UX, Industrial Design, and Personal Projects</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="ux.html">UX Design</a></li>
-                <li><a href="industrial-design.html">Industrial Design</a></li>
-                <li><a href="personal-projects.html">Personal Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="hero">
+        <h1>Hey, I’m <span class="highlight">Darya.</span></h1>
+        <p>I make things and think outside the lines.</p>
+        <img src="cat.png" alt="Abstract cat illustration" class="hero-cat">
     </header>
     
-    <section id="ux">
-        <h2>UX Design</h2>
-        <p>Designing user-centered solutions that improve experiences.</p>
-        <ul>
-            <li><a href="ux-project1.html">Project 1</a></li>
-            <li><a href="ux-project2.html">Project 2</a></li>
-            <li><a href="ux-project3.html">Project 3</a></li>
-        </ul>
+    <section class="explore-section">
+        <h2><span class="highlight">Explore.</span></h2>
+        <div class="scroll-line">
+            <div class="scroll-indicator"></div>
+        </div>
     </section>
     
-    <section id="industrial-design">
-        <h2>Industrial Design</h2>
-        <p>Innovative product development through design thinking.</p>
-        <ul>
-            <li><a href="id-project1.html">Project 1</a></li>
-            <li><a href="id-project2.html">Project 2</a></li>
-            <li><a href="id-project3.html">Project 3</a></li>
-        </ul>
+    <section class="content-sections">
+        <div class="content-item">
+            <div class="text">
+                <h3>Project Title</h3>
+                <p>Brief description of the project.</p>
+            </div>
+            <img src="thumbnail1.png" alt="Project Thumbnail" class="thumbnail">
+        </div>
+        <div class="content-item">
+            <div class="text">
+                <h3>Another Project</h3>
+                <p>Another brief description.</p>
+            </div>
+            <img src="thumbnail2.png" alt="Project Thumbnail" class="thumbnail">
+        </div>
     </section>
     
-    <section id="personal-projects">
-        <h2>Personal Projects</h2>
-        <p>Explorations and experiments beyond professional work.</p>
-        <ul>
-            <li><a href="personal-project1.html">Project 1</a></li>
-            <li><a href="personal-project2.html">Project 2</a></li>
-            <li><a href="personal-project3.html">Project 3</a></li>
-        </ul>
-    </section>
+    <nav class="sticky-nav">
+        <a href="#contact" class="nav-button active">Contact</a>
+        <a href="#about" class="nav-button">About</a>
+        <a href="#work" class="nav-button">Work</a>
+        <a href="#resume" class="nav-button">Resume</a>
+    </nav>
     
-    <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
-    </footer>
+    <script>
+        document.addEventListener("scroll", function() {
+            const scrollIndicator = document.querySelector(".scroll-indicator");
+            const scrollLine = document.querySelector(".scroll-line");
+            
+            const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollFraction = window.scrollY / maxScroll;
+            const lineHeight = scrollLine.offsetHeight;
+            
+            const newTop = scrollFraction * lineHeight;
+            scrollIndicator.style.top = `${newTop}px`;
+        });
+    </script>
 </body>
 </html>
