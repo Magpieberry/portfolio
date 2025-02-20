@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #F5F7FA; /* Light neutral background */
-    background-image: vector-elegant-blue-wavy-pattern-background.jpg;
+    background-image: url('background-pattern.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: overlay;
@@ -43,7 +43,14 @@ body {
 
 .hero p {
     font-size: 1.5rem;
-    margin-top: 0px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .hero-cat {
