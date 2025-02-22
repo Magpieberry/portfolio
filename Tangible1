@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tactile Music Device - Case Study</title>
+    
+<link href="file:///C|/Users/ASUS/Pictures/פורטפוליו/2css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Turning Sound into Touch</h1>
+        <p class="subtitle">Designing a vibration-based music experience for sensory and mental health applications.</p>
+        <img src="hero-image.jpg" alt="Final Device Render" class="hero-image">
+    </header>
+
+    <!-- Problem Section -->
+    <section class="section">
+        <div class="text">
+            <h2>The Challenge</h2>
+            <p>Music can be deeply emotional, but it can also be tied to trauma. The goal was to create a device that allows people to **experience music through touch**, creating a new way to engage with sound while reducing emotional distress.</p>
+        </div>
+    </section>
+
+    <!-- Research & Initial Development -->
+    <section class="section image-right">
+        <div class="text">
+            <h2>Research & Technical Exploration</h2>
+            <p>We began by investigating how to **convert audio into tactile sensations**. The challenge was making vibrations feel natural and **not random noise**.</p>
+            <p>Early decisions focused on **component selection**, ensuring the device was **comfortable and lightweight**, and experimenting with **different vibration patterns.**</p>
+        </div>
+        <img src="research-image.jpg" alt="Research sketches and concepts" class="image">
+    </section>
+
+    <!-- Prototyping Process -->
+    <section class="section image-left">
+        <img src="prototype-image.jpg" alt="Prototype designs" class="image">
+        <div class="text">
+            <h2>Prototyping & Refinement</h2>
+            <p>Multiple iterations helped us refine the shape for **secure grip and comfort**. The device needed to be quiet, so internal rattling and acoustic interference were key concerns.</p>
+            <p>We tested different materials and actuator placements to balance **comfort, weight, and effectiveness**.</p>
+        </div>
+    </section>
+
+    <!-- Final Design and Insights -->
+    <section class="section image-right">
+        <div class="text">
+            <h2>The Final Design</h2>
+            <p>The final device features **dual-actuators positioned according to sensory nerves** for maximum effectiveness. It provides a **consistent, quiet, and immersive tactile experience.**</p>
+        </div>
+        <img src="final-device.jpg" alt="Final device render" class="image">
+    </section>
+
+    <!-- Reflection & Next Steps -->
+    <section class="section">
+        <div class="text">
+            <h2>Reflection & Next Steps</h2>
+            <p>The project highlighted the importance of **tactile precision and sensory alignment**. Future iterations could explore **more advanced haptic patterns and custom user settings**.</p>
+        </div>
+    </section>
+
+</body>
+</html>
