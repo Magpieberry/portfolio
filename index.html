@@ -3,47 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Darya's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+<link href="file:///C|/Users/ASUS/Pictures/פורטפוליו/2css.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <header class="hero">
-        <h1>Hey, I’m <span class="highlight">Darya.</span></h1>
-        <p>I make things and think outside the lines.</p>
-        <img src="cat.png" alt="Abstract cat illustration" class="hero-cat">
-    </header>
-    
-    <section class="explore-section">
-        <h2><span class="highlight">Explore.</span></h2>
-        <div class="scroll-line">
-            <div class="scroll-indicator"></div>
+<br>
+		<br>
+		<br>
+    <div class="top-images">
+		
+        <div class="top-image-container">
+            <div class="top-image left" id="leftImage">Image 1</div>
         </div>
-    </section>
-    
-    <section class="content-sections">
-        <div class="content-item">
-            <div class="text">
-                <h3>Project Title</h3>
-                <p>Brief description of the project.</p>
-            </div>
-            <img src="thumbnail1.png" alt="Project Thumbnail" class="thumbnail">
+        <div class="top-image-container">
+            <div class="top-image right" id="rightImage">Image 2</div>
         </div>
-        <div class="content-item">
-            <div class="text">
-                <h3>Another Project</h3>
-                <p>Another brief description.</p>
-            </div>
-            <img src="thumbnail2.png" alt="Project Thumbnail" class="thumbnail">
-        </div>
-    </section>
-    
-    <nav class="sticky-nav">
-        <a href="#contact" class="nav-button active">Contact</a>
-        <a href="#about" class="nav-button">About</a>
-        <a href="#work" class="nav-button">Work</a>
-        <a href="#resume" class="nav-button">Resume</a>
-    </nav>
+    </div>
+	
+	<div> <p>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>
+	    <br>
+	    <br>
+	    <br>
+	    
+	    <br>
+	    <br>
+	    <br>
+	    <br>
+	    &nbsp; </p>
+	</div>
 
-    <script src="script.js"></script>
+    <div class="bottom-images">
+        <div class="bottom-image-container">
+            <div class="bottom-title">Project 1</div>
+            <a href="page1.html" class="bottom-image">Project 1</a>
+        </div>
+        <div class="bottom-image-container">
+            <div class="bottom-title">Project 2</div>
+            <a href="page2.html" class="bottom-image">Project 2</a>
+        </div>
+        <div class="bottom-image-container">
+            <div class="bottom-title">Project 3</div>
+            <a href="page3.html" class="bottom-image">Project 3</a>
+        </div>
+		
+    </div>
+        <br>
+		<br>
+		<br>
+	    <br>
+		<br>
+	    <br>
+		<br>
+	
+	<footer class="footer">Content for New footer Tag Goes Here</footer>
+<script>
+        window.onload = function() {
+            document.getElementById("leftImage").style.transform = "translateX(0)";
+            document.getElementById("leftImage").style.opacity = "1";
+            document.getElementById("rightImage").style.transform = "translateX(0)";
+            document.getElementById("rightImage").style.opacity = "1";
+        };
+    </script>
 </body>
 </html>
